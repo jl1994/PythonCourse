@@ -12,16 +12,13 @@ def myFunction():
 #     print('Memory: ', memory)
 #     print('Entrypoint: ', entrypoint)
 
-
 # createContainer(*netlunaContainer)
-
 
 # def createContainer2(*args, ):
 #     print('Name: ', args[0])
 #     print('CPU: ', args[1])
 #     print('Memory: ', args[2])
 #     print('Entrypoint: ', args[3])
-
 
 # createContainer(*netlunaContainer)
 
@@ -33,30 +30,37 @@ def myFunction():
 
 # Suponiendo que tienes un objeto netlunaContainer con los valores necesarios
 
-netlunaContainer = {  # Dictionary
-    'name': 'MiContenedor',
-    'cpu': 2,
-    'memory': '4GB',
-    'entrypoint': '/ruta/a/tu/entrada'
-}
+# netlunaContainer = {  # Dictionary
+#     'name': 'MiContenedor',
+#     'cpu': 2,
+#     'memory': '4GB',
+#     'entrypoint': '/ruta/a/tu/entrada'
+# }
 
-netlunaContainerList = ['MiContenedor', 2, 4, '/ruta/a/tu/entrada']  # List
-# netlunaContainerList2 = ('MiContenedor', 2, 4, '/ruta/a/tu/entrada')  # Tuple
-
-
-# createContainer2(**netlunaContainer)
-print(type(netlunaContainerList))
-# print(type(netlunaContainerList2))
+# netlunaContainerList = ['MiContenedor', 2, 4, '/ruta/a/tu/entrada']  # List
+# # netlunaContainerList2 = ('MiContenedor', 2, 4, '/ruta/a/tu/entrada')  # Tuple
 
 
-def createNameContainer(list):
-    i = ' '
-    for e in list:
-        i = i + str(e) + ' '
-    print(i)
-    return i
+# # createContainer2(**netlunaContainer)
+# print(type(netlunaContainerList))
+# # print(type(netlunaContainerList2))
 
 
-returnDatos = createNameContainer(netlunaContainerList)
+# def createNameContainer(list):
+#     i = ' '
+#     for e in list:
+#         i = i + str(e) + ' '
+#     print(i)
+#     return i
 
-print(returnDatos)
+# returnDatos = createNameContainer(netlunaContainerList)
+
+# print(returnDatos)
+
+def welcome(name):
+    return f'Welcome {name} to Netluna!'
+
+
+welcomeUser = welcome('Johan')
+
+print(welcomeUser)
