@@ -16,7 +16,7 @@ class User:  # The first letter is capitalized for classes
     # Print all properties
     def list_user(self):
         print(
-            f'\n{self.username}\n{self.name}\n{self.lastname}\n{self.id}\n{self.email}')
+            f'\n--- User Team --- \n\n{self.username}\n{self.name}\n{self.lastname}\n{self.id}\n{self.email}')
 
 
 # We instantiate an object of the User class
@@ -34,6 +34,21 @@ user1.username = "johan.luna1994"
 # del user1.username
 # del user1
 user1.list_user()
+
+### INHERITANCE ###
+
+
+class DevOps(User):
+    def superList(self):
+        print(
+            f'\n--- DevOps Team --- \n\n{self.username}\n{self.name}\n{self.lastname}\n{self.id}\n{self.email}')
+
+
+devops1 = DevOps("johan.luna", "Johan", "Luna",
+                 1143966442, "johan.luna@mycompany.com")
+
+devops1.list_user()
+devops1.superList()
 
 
 # class AmazonSES:
