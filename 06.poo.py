@@ -13,6 +13,11 @@ class User:  # The first letter is capitalized for classes
     def create_user(self):
         print(f'Creating the new user to {self.username}')
 
+    # Print all properties
+    def list_user(self):
+        print(
+            f'\n{self.username}\n{self.name}\n{self.lastname}\n{self.id}\n{self.email}')
+
 
 # We instantiate an object of the User class
 user1 = User("johan.luna", "Johan", "Luna",
@@ -23,50 +28,57 @@ user2 = User("ederlien.bermeo", "Ederlien", "Bermeo",
 user1.change_password()
 user2.create_user()
 
+# Self, Add, Delete properties
 
-class AmazonSES:
-    check_service = "Check Endpoint SMTP"
-    send_emails = "Send Emails"
-    gen_reports = "Generating Reports"
-check_service_finkargo = AmazonSES()
-
-# print(check_service_finkargo.check_service,
-#       "\n", check_service_finkargo.send_emails)
+user1.username = "johan.luna1994"
+# del user1.username
+# del user1
+user1.list_user()
 
 
-class Scanner:
-    scanning_ports = ""
+# class AmazonSES:
+#     check_service = "Check Endpoint SMTP"
+#     send_emails = "Send Emails"
+#     gen_reports = "Generating Reports"
+# check_service_finkargo = AmazonSES()
 
-# Examples
-
-
-class store:
-    open_store = ""
-    close_store = ""
-    sell_product = ""
-    manage_inventory = ""
+# # print(check_service_finkargo.check_service,
+# #       "\n", check_service_finkargo.send_emails)
 
 
-class bank:
-    open_account = ""
-    close_account = ""
-    insert_money = ""
-    take_out_money = ""
+# class Scanner:
+#     scanning_ports = ""
+
+# # Examples
 
 
-class book:
-    read = ""
-    lend = ""
-    return_book = ""
+# class store:
+#     open_store = ""
+#     close_store = ""
+#     sell_product = ""
+#     manage_inventory = ""
 
 
-class Car:
-    speed = ""
-    curb = ""
-    spin = ""
+# class bank:
+#     open_account = ""
+#     close_account = ""
+#     insert_money = ""
+#     take_out_money = ""
 
 
-class Person:
-    talk = ""
-    walk = ""
-    eat = ""
+# class book:
+#     read = ""
+#     lend = ""
+#     return_book = ""
+
+
+# class Car:
+#     speed = ""
+#     curb = ""
+#     spin = ""
+
+
+# class Person:
+#     talk = ""
+#     walk = ""
+#     eat = ""
