@@ -5,20 +5,15 @@ class User:  # The first letter is capitalized for classes
         self.lastname = lastname
         self.id = id
         self.email = email
-
     # New methods
     def change_password(self):
         print(f'Change password to {self.username}')
-
     def create_user(self):
         print(f'Creating the new user to {self.username}')
-
     # Print all properties
     def list_user(self):
         print(
             f'\n--- User Team --- \n\n{self.username}\n{self.name}\n{self.lastname}\n{self.id}\n{self.email}')
-
-
 # We instantiate an object of the User class
 user1 = User("johan.luna", "Johan", "Luna",
              1143966442, "johanluna777@gmail.com")
