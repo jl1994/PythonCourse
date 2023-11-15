@@ -7,9 +7,9 @@ counter = 0
 # var1 * var2
 # 2 * 3
 
-# 0 + 2 - Ciclo 1
-# 2 + 2 - Ciclo 2
-# 4 + 2 - Ciclo 3
+# 0 + 2 - Cycle 1
+# 2 + 2 - Cycle 2
+# 4 + 2 - Cycle 3
 
 for i in range(0, num2):
     # print(1)  # Cycle debug
