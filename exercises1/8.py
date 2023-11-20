@@ -2,6 +2,7 @@
 
 def numbers_luna():  # Function name
     numbers = []  # Empty list to save the numbers.
+    total = 0
 
     while True:  # Infinite loop with True
         # Prompted the user to enter a random number
@@ -14,8 +15,12 @@ def numbers_luna():  # Function name
                 number = float(user_input)  # Convert string to float
                 numbers.append(number)  # Add elements to list
             except ValueError:
-                print('Error')
-    total = sum(numbers)  # The sum of the elements
+                print('Value error')
+                # exit() # Exit program (Optional)
+    # We can sum the numbers with a for cycle
+    for i in numbers:
+        total += i
+    # total = sum(numbers)  # The sum of the elements
     return total  # Return sum
 
 
