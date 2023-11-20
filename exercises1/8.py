@@ -9,11 +9,12 @@ def numbers_luna():  # Function name
         # Conditional to validate it what the user entered is and string equal to 'stop'
         if user_input == 'stop':
             break
-        try:  # Use this expression to capture and handle exceptions.
-            number = float(user_input)  # Convert string to float
-            numbers.append(number)  # Add elements to list
-        except ValueError:
-            print('Error')
+        else:
+            try:  # Use this expression to capture and handle exceptions.
+                number = float(user_input)  # Convert string to float
+                numbers.append(number)  # Add elements to list
+            except ValueError:
+                print('Error')
     total = sum(numbers)  # The sum of the elements
     return total  # Return sum
 
