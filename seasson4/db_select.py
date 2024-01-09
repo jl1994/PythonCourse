@@ -12,10 +12,12 @@ cursor = conn_db.cursor()
 cursor.execute('select * from users.Users')
 
 # Get the query results
-result_query = cursor.fetchall()
+# result_query = cursor.fetchall()
+result_query2 = cursor.fetchone()
 
 # Print the result
-print(result_query)
+# print(result_query)
+print(result_query2)
 
 # Close connection
 conn_db.close()
